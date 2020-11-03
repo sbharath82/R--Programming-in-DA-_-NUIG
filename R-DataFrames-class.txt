@@ -1,0 +1,646 @@
+                                                            
+                                                            $DataSize
+                                                            Rows Cols 
+                                                            272    2 
+                                                            
+                                                            > library(mtcars)
+                                                            Error in library(mtcars) : there is no package called 'mtcars'
+                                                            > mtcars
+                                                            mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+                                                            Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+                                                            Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+                                                            Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+                                                            Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+                                                            Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+                                                            Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+                                                            Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+                                                            Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+                                                            Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+                                                            Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+                                                            Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+                                                            Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+                                                            Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+                                                            Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+                                                            Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+                                                            Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+                                                            Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+                                                            Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+                                                            Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+                                                            Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+                                                            Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+                                                            Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+                                                            AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+                                                            Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+                                                            Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+                                                            Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+                                                            Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+                                                            Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+                                                            Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+                                                            Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+                                                            Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+                                                            Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+                                                            > str(mtcars'')
+                                                            Error: unexpected string constant in "str(mtcars''"
+                                                            > str(mtcars)
+                                                            'data.frame':	32 obs. of  11 variables:
+                                                              $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+                                                            $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
+                                                            $ disp: num  160 160 108 258 360 ...
+                                                            $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...
+                                                            $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+                                                            $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...
+                                                            $ qsec: num  16.5 17 18.6 19.4 17 ...
+                                                            $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...
+                                                            $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
+                                                            $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
+                                                            $ carb: num  4 4 1 1 2 1 4 2 2 4 ...
+                                                            > sloop:otype(mtcars)
+                                                            Error: object 'sloop' not found
+                                                            > sloop::otype(mtcars)
+                                                            Error in loadNamespace(name) : there is no package called 'sloop'
+                                                            > head(mtcars)
+                                                            mpg cyl disp  hp drat    wt  qsec vs am gear carb
+                                                            Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+                                                            Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+                                                            Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+                                                            Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+                                                            Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+                                                            Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+                                                            > tail(mtcars)
+                                                            mpg cyl  disp  hp drat    wt qsec vs am gear carb
+                                                            Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.7  0  1    5    2
+                                                            Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.9  1  1    5    2
+                                                            Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.5  0  1    5    4
+                                                            Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.5  0  1    5    6
+                                                            Maserati Bora  15.0   8 301.0 335 3.54 3.570 14.6  0  1    5    8
+                                                            Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2
+                                                            > mtcars[mtcars$gear == 5,]
+                                                            mpg cyl  disp  hp drat    wt qsec vs am gear carb
+                                                            Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.7  0  1    5    2
+                                                            Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.9  1  1    5    2
+                                                            Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.5  0  1    5    4
+                                                            Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.5  0  1    5    6
+                                                            Maserati Bora  15.0   8 301.0 335 3.54 3.570 14.6  0  1    5    8
+                                                            > mtcars[1:10,1:6]
+                                                            mpg cyl  disp  hp drat    wt
+                                                            Mazda RX4         21.0   6 160.0 110 3.90 2.620
+                                                            Mazda RX4 Wag     21.0   6 160.0 110 3.90 2.875
+                                                            Datsun 710        22.8   4 108.0  93 3.85 2.320
+                                                            Hornet 4 Drive    21.4   6 258.0 110 3.08 3.215
+                                                            Hornet Sportabout 18.7   8 360.0 175 3.15 3.440
+                                                            Valiant           18.1   6 225.0 105 2.76 3.460
+                                                            Duster 360        14.3   8 360.0 245 3.21 3.570
+                                                            Merc 240D         24.4   4 146.7  62 3.69 3.190
+                                                            Merc 230          22.8   4 140.8  95 3.92 3.150
+                                                            Merc 280          19.2   6 167.6 123 3.92 3.440
+                                                            > mtcars[mtcars$cyl == 6,c("mpg","cyl")]
+                                                            mpg cyl
+                                                            Mazda RX4      21.0   6
+                                                            Mazda RX4 Wag  21.0   6
+                                                            Hornet 4 Drive 21.4   6
+                                                            Valiant        18.1   6
+                                                            Merc 280       19.2   6
+                                                            Merc 280C      17.8   6
+                                                            Ferrari Dino   19.7   6
+                                                            > mtcars[mtcars$mpg > mean(mpg)]
+                                                            Error in `[.data.frame`(mtcars, mtcars$mpg > mean(mpg)) : 
+                                                              undefined columns selected
+                                                            In addition: Warning message:
+                                                              In mean.default(mpg) : argument is not numeric or logical: returning NA
+                                                            > mtcars[mtcars$mpg > mean(mpg),]
+                                                            mpg cyl disp hp drat wt qsec vs am gear carb
+                                                            NA     NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.1   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.2   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.3   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.4   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.5   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.6   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.7   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.8   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.9   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.10  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.11  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.12  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.13  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.14  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.15  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.16  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.17  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.18  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.19  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.20  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.21  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.22  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.23  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.24  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.25  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.26  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.27  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.28  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.29  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.30  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.31  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            Warning message:
+                                                              In mean.default(mpg) : argument is not numeric or logical: returning NA
+                                                            > mtcars[mtcars$mpg > mean(mpg),c("mpg")]
+                                                            [1] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
+                                                            Warning message:
+                                                              In mean.default(mpg) : argument is not numeric or logical: returning NA
+                                                            > mtcars
+                                                            mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+                                                            Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+                                                            Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+                                                            Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+                                                            Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+                                                            Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+                                                            Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+                                                            Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+                                                            Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+                                                            Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+                                                            Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+                                                            Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+                                                            Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+                                                            Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+                                                            Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+                                                            Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+                                                            Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+                                                            Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+                                                            Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+                                                            Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+                                                            Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+                                                            Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+                                                            Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+                                                            AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+                                                            Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+                                                            Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+                                                            Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+                                                            Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+                                                            Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+                                                            Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+                                                            Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+                                                            Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+                                                            Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+                                                            > mtcars[mtcars$mpg > mean(mpg),]
+                                                            mpg cyl disp hp drat wt qsec vs am gear carb
+                                                            NA     NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.1   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.2   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.3   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.4   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.5   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.6   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.7   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.8   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.9   NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.10  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.11  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.12  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.13  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.14  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.15  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.16  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.17  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.18  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.19  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.20  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.21  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.22  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.23  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.24  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.25  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.26  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.27  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.28  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.29  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.30  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            NA.31  NA  NA   NA NA   NA NA   NA NA NA   NA   NA
+                                                            Warning message:
+                                                              In mean.default(mpg) : argument is not numeric or logical: returning NA
+                                                            > mtcars$mpg
+                                                            [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4 10.4 14.7 32.4 30.4
+                                                            [20] 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7 15.0 21.4
+                                                            > mean(mtcars$mpg)
+                                                            [1] 20.09062
+                                                            > mtcars[mtcars$mpg > mean(mtcars$mpg),]
+                                                            mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+                                                            Mazda RX4      21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+                                                            Mazda RX4 Wag  21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+                                                            Datsun 710     22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+                                                            Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+                                                            Merc 240D      24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+                                                            Merc 230       22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+                                                            Fiat 128       32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+                                                            Honda Civic    30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+                                                            Toyota Corolla 33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+                                                            Toyota Corona  21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+                                                            Fiat X1-9      27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+                                                            Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+                                                            Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+                                                            Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+                                                            > View(mtcars[mtcars$mpg > mean(mtcars$mpg),])
+                                                            > rownames(mtcars[mtcars$mpg > mean(mtcars$mpg),])
+                                                            [1] "Mazda RX4"      "Mazda RX4 Wag"  "Datsun 710"     "Hornet 4 Drive" "Merc 240D"     
+                                                            [6] "Merc 230"       "Fiat 128"       "Honda Civic"    "Toyota Corolla" "Toyota Corona" 
+                                                            [11] "Fiat X1-9"      "Porsche 914-2"  "Lotus Europa"   "Volvo 142E"    
+                                                            > mtcars[mtcars$mpg > mean(mtcars$mpg),c(1,2)]
+                                                            mpg cyl
+                                                            Mazda RX4      21.0   6
+                                                            Mazda RX4 Wag  21.0   6
+                                                            Datsun 710     22.8   4
+                                                            Hornet 4 Drive 21.4   6
+                                                            Merc 240D      24.4   4
+                                                            Merc 230       22.8   4
+                                                            Fiat 128       32.4   4
+                                                            Honda Civic    30.4   4
+                                                            Toyota Corolla 33.9   4
+                                                            Toyota Corona  21.5   4
+                                                            Fiat X1-9      27.3   4
+                                                            Porsche 914-2  26.0   4
+                                                            Lotus Europa   30.4   4
+                                                            Volvo 142E     21.4   4
+                                                            > mtcars[mtcars$mpg > mean(mtcars$mpg),c(1,0)]
+                                                            [1] 21.0 21.0 22.8 21.4 24.4 22.8 32.4 30.4 33.9 21.5 27.3 26.0 30.4 21.4
+                                                            > mtcars[mtcars$mpg > mean(mtcars$mpg),c(1,0)]
+                                                            [1] 21.0 21.0 22.8 21.4 24.4 22.8 32.4 30.4 33.9 21.5 27.3 26.0 30.4 21.4
+                                                            > mtcars[mtcars$mpg > mean(mtcars$mpg),1:2]
+                                                            mpg cyl
+                                                            Mazda RX4      21.0   6
+                                                            Mazda RX4 Wag  21.0   6
+                                                            Datsun 710     22.8   4
+                                                            Hornet 4 Drive 21.4   6
+                                                            Merc 240D      24.4   4
+                                                            Merc 230       22.8   4
+                                                            Fiat 128       32.4   4
+                                                            Honda Civic    30.4   4
+                                                            Toyota Corolla 33.9   4
+                                                            Toyota Corona  21.5   4
+                                                            Fiat X1-9      27.3   4
+                                                            Porsche 914-2  26.0   4
+                                                            Lotus Europa   30.4   4
+                                                            Volvo 142E     21.4   4
+                                                            > mtcars[mtcars$mpg > mean(mtcars$mpg),1:0]
+                                                            [1] 21.0 21.0 22.8 21.4 24.4 22.8 32.4 30.4 33.9 21.5 27.3 26.0 30.4 21.4
+                                                            > mtcars[mtcars$mpg > mean(mtcars$mpg),1,drop=F]
+                                                            mpg
+                                                            Mazda RX4      21.0
+                                                            Mazda RX4 Wag  21.0
+                                                            Datsun 710     22.8
+                                                            Hornet 4 Drive 21.4
+                                                            Merc 240D      24.4
+                                                            Merc 230       22.8
+                                                            Fiat 128       32.4
+                                                            Honda Civic    30.4
+                                                            Toyota Corolla 33.9
+                                                            Toyota Corona  21.5
+                                                            Fiat X1-9      27.3
+                                                            Porsche 914-2  26.0
+                                                            Lotus Europa   30.4
+                                                            Volvo 142E     21.4
+                                                            > mtcars[mtcars$disp == max(mtcars$disp),]
+                                                            mpg cyl disp  hp drat   wt  qsec vs am gear carb
+                                                            Cadillac Fleetwood 10.4   8  472 205 2.93 5.25 17.98  0  0    3    4
+                                                            > rownames(mtcars[mtcars$disp == max(mtcars$disp),])
+                                                            [1] "Cadillac Fleetwood"
+                                                            > sb<-subset(mtcars,cyl == 6, select=c("mpg","cyl"))
+                                                            > sb
+                                                            mpg cyl
+                                                            Mazda RX4      21.0   6
+                                                            Mazda RX4 Wag  21.0   6
+                                                            Hornet 4 Drive 21.4   6
+                                                            Valiant        18.1   6
+                                                            Merc 280       19.2   6
+                                                            Merc 280C      17.8   6
+                                                            Ferrari Dino   19.7   6
+                                                            > ans<-sapply(sb,function(c){
+                                                              +   browser()
+                                                              +   })
+                                                            Called from: FUN(X[[i]], ...)
+                                                            Browse[1]> sb<-subset(mtcars,cyl == 6, select=c("mpg","cyl"))
+                                                            Browse[1]> col
+                                                            function (x, as.factor = FALSE) 
+                                                            {
+                                                              if (as.factor) {
+                                                                labs <- colnames(x, do.NULL = FALSE, prefix = "")
+                                                                res <- factor(.Internal(col(dim(x))), labels = labs)
+                                                                dim(res) <- dim(x)
+                                                                res
+                                                              }
+                                                              else .Internal(col(dim(x)))
+                                                            }
+                                                            <bytecode: 0x000001c795aa9010>
+                                                              <environment: namespace:base>
+                                                              Browse[1]> Q
+                                                            > ans<-sapply(sb,function(col){
+                                                              +   browser()
+                                                              +   })
+                                                            Called from: FUN(X[[i]], ...)
+                                                            Browse[1]> col
+                                                            [1] 21.0 21.0 21.4 18.1 19.2 17.8 19.7
+                                                            Browse[1]> sb
+                                                            mpg cyl
+                                                            Mazda RX4      21.0   6
+                                                            Mazda RX4 Wag  21.0   6
+                                                            Hornet 4 Drive 21.4   6
+                                                            Valiant        18.1   6
+                                                            Merc 280       19.2   6
+                                                            Merc 280C      17.8   6
+                                                            Ferrari Dino   19.7   6
+                                                            Browse[1]> col
+                                                            [1] 21.0 21.0 21.4 18.1 19.2 17.8 19.7
+                                                            Browse[1]> c
+                                                            Called from: FUN(X[[i]], ...)
+                                                            Browse[1]> col
+                                                            [1] 6 6 6 6 6 6 6
+                                                            Browse[1]> Q
+                                                            > ans<-sapply(sb,function(col){
+                                                              +   min(col)
+                                                              +   })
+                                                            > ans
+                                                            mpg  cyl 
+                                                            17.8  6.0 
+                                                            > apply(sb,2,function(col){min(col)})
+                                                            mpg  cyl 
+                                                            17.8  6.0 
+                                                            > apply(sb,1,function(col){min(col)})
+                                                            Mazda RX4  Mazda RX4 Wag Hornet 4 Drive        Valiant       Merc 280      Merc 280C 
+                                                            6              6              6              6              6              6 
+                                                            Ferrari Dino 
+                                                            6 
+                                                            > View(mtcars)
+                                                            > mtcars$kmpg<- mtcars[$mpg*1.5]
+                                                            Error: unexpected '$' in "mtcars$kmpg<- mtcars[$"
+                                                            > mtcars$kmpg<- $mpg*1.609
+                                                            Error: unexpected '$' in "mtcars$kmpg<- $"
+                                                            > mtcars$kmpg<- mtcars$mpg*1.609
+                                                            > View(mtcars)
+                                                            > d
+                                                            [1] 79 54 74 62 85 55 88 85 51 85 54 84 78 47 83 52 62 84 52 79 51 47 78 69 74 83 55 76 78 79 73
+                                                            [32] 77 66 80 74 52 48 80 59 90 80 58 84 58 73 83 64 53 82 59 75 90 54 80 54 83 71 64 77 81 59 84
+                                                            [63] 48 82 60 92 78 78 65 73 82 56 79 71 62 76 60 78 76 83 75 82 70 65 73 88 76 80 48 86 60 90 50
+                                                            [94] 78 63 72 84 75 51 82 62 88 49 83 81 47 84 52 86 81 75 59 89 79 59 81 50 85 59 87 53 69 77 56
+                                                            [125] 88 81 45 82 55 90 45 83 56 89 46 82 51 86 53 79 81 60 82 77 76 59 80 49 96 53 77 77 65 81 71
+                                                            [156] 70 81 93 53 89 45 86 58 78 66 76 63 88 52 93 49 57 77 68 81 81 73 50 85 74 55 77 83 83 51 78
+                                                            [187] 84 46 83 55 81 57 76 84 77 81 87 77 51 78 60 82 91 53 78 46 77 84 49 83 71 80 49 75 64 76 53
+                                                            [218] 94 55 76 50 82 54 75 78 79 78 78 70 79 70 54 86 50 90 54 54 77 79 64 75 47 86 63 85 82 57 82
+                                                            [249] 67 74 54 83 73 73 88 80 71 83 56 79 78 84 58 83 43 60 75 81 46 90 46 74
+                                                            > library(nycflights)
+                                                            Error in library(nycflights) : there is no package called 'nycflights'
+                                                            > library(nycflights13)
+                                                            Error in library(nycflights13) : 
+                                                              there is no package called 'nycflights13'
+                                                            > install.packages(nycflights13)
+                                                            Error in install.packages : object 'nycflights13' not found
+                                                            > install.packages($nycflights13)
+                                                            Error: unexpected '$' in "install.packages($"
+                                                            > library("nycflights13")
+                                                            Error in library("nycflights13") : 
+                                                              there is no package called 'nycflights13'
+                                                            > install.packages("nycflights13")
+                                                            WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+                                                              
+                                                              https://cran.rstudio.com/bin/windows/Rtools/
+                                                              Installing package into 'C:/Users/sbhar/Documents/R/win-library/3.6'
+                                                            (as 'lib' is unspecified)
+                                                            trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/nycflights13_1.0.1.zip'
+                                                            Content type 'application/zip' length 7110824 bytes (6.8 MB)
+                                                            downloaded 6.8 MB
+                                                            
+                                                            package 'nycflights13' successfully unpacked and MD5 sums checked
+                                                            
+                                                            The downloaded binary packages are in
+                                                            C:\Users\sbhar\AppData\Local\Temp\RtmpEjNz46\downloaded_packages
+                                                            > library(nycflights13)
+                                                            > nycflights::flights
+                                                            Error in loadNamespace(name) : there is no package called 'nycflights'
+                                                            > nycflights13::flights
+                                                            # A tibble: 336,776 x 19
+                                                            year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time arr_delay carrier
+                                                            <int> <int> <int>    <int>          <int>     <dbl>    <int>          <int>     <dbl> <chr>  
+                                                              1  2013     1     1      517            515         2      830            819        11 UA     
+                                                            2  2013     1     1      533            529         4      850            830        20 UA     
+                                                            3  2013     1     1      542            540         2      923            850        33 AA     
+                                                            4  2013     1     1      544            545        -1     1004           1022       -18 B6     
+                                                            5  2013     1     1      554            600        -6      812            837       -25 DL     
+                                                            6  2013     1     1      554            558        -4      740            728        12 UA     
+                                                            7  2013     1     1      555            600        -5      913            854        19 B6     
+                                                            8  2013     1     1      557            600        -3      709            723       -14 EV     
+                                                            9  2013     1     1      557            600        -3      838            846        -8 B6     
+                                                            10  2013     1     1      558            600        -2      753            745         8 AA     
+                                                            # ... with 336,766 more rows, and 9 more variables: flight <int>, tailnum <chr>, origin <chr>,
+                                                            #   dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>, minute <dbl>, time_hour <dttm>
+                                                            > d<- data.frame(x=1:3, y = LETTERS[1:3],
+                                                                             +                z = letters[1:3])
+                                                            > d
+                                                            x y z
+                                                            1 1 A a
+                                                            2 2 B b
+                                                            3 3 C c
+                                                            > d[2,3]<-NA
+                                                            > d
+                                                            x y    z
+                                                            1 1 A    a
+                                                            2 2 B <NA>
+                                                              3 3 C    c
+                                                            > complete.cases(d)
+                                                            [1]  TRUE FALSE  TRUE
+                                                            > d
+                                                            x y    z
+                                                            1 1 A    a
+                                                            2 2 B <NA>
+                                                              3 3 C    c
+                                                            > d[complete.cases(d)]
+                                                            x    z
+                                                            1 1    a
+                                                            2 2 <NA>
+                                                              3 3    c
+                                                            > d[complete.cases(d),]
+                                                            x y z
+                                                            1 1 A a
+                                                            3 3 C c
+                                                            > nycflights13::flights
+                                                            # A tibble: 336,776 x 19
+                                                            year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time arr_delay carrier
+                                                            <int> <int> <int>    <int>          <int>     <dbl>    <int>          <int>     <dbl> <chr>  
+                                                              1  2013     1     1      517            515         2      830            819        11 UA     
+                                                            2  2013     1     1      533            529         4      850            830        20 UA     
+                                                            3  2013     1     1      542            540         2      923            850        33 AA     
+                                                            4  2013     1     1      544            545        -1     1004           1022       -18 B6     
+                                                            5  2013     1     1      554            600        -6      812            837       -25 DL     
+                                                            6  2013     1     1      554            558        -4      740            728        12 UA     
+                                                            7  2013     1     1      555            600        -5      913            854        19 B6     
+                                                            8  2013     1     1      557            600        -3      709            723       -14 EV     
+                                                            9  2013     1     1      557            600        -3      838            846        -8 B6     
+                                                            10  2013     1     1      558            600        -2      753            745         8 AA     
+                                                            # ... with 336,766 more rows, and 9 more variables: flight <int>, tailnum <chr>, origin <chr>,
+                                                            #   dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>, minute <dbl>, time_hour <dttm>
+                                                            > nycf1<-subset(nycflights,,select=day:arr_delay)
+                                                            Error in subset(nycflights, , select = day:arr_delay) : 
+                                                              object 'nycflights' not found
+                                                            > nycf1<-subset(nycflights13,,select=day:arr_delay)
+                                                            Error in subset(nycflights13, , select = day:arr_delay) : 
+                                                              object 'nycflights13' not found
+                                                            > nycf1<-subset(nycflights13::flights,,select=day:arr_delay)
+                                                            > nycf1
+                                                            # A tibble: 336,776 x 7
+                                                            day dep_time sched_dep_time dep_delay arr_time sched_arr_time arr_delay
+                                                            <int>    <int>          <int>     <dbl>    <int>          <int>     <dbl>
+                                                              1     1      517            515         2      830            819        11
+                                                            2     1      533            529         4      850            830        20
+                                                            3     1      542            540         2      923            850        33
+                                                            4     1      544            545        -1     1004           1022       -18
+                                                            5     1      554            600        -6      812            837       -25
+                                                            6     1      554            558        -4      740            728        12
+                                                            7     1      555            600        -5      913            854        19
+                                                            8     1      557            600        -3      709            723       -14
+                                                            9     1      557            600        -3      838            846        -8
+                                                            10     1      558            600        -2      753            745         8
+                                                            # ... with 336,766 more rows
+                                                            > complete.cases(nycf1)
+                                                            [1]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [16]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [31]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [46]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [61]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [76]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [91]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [106]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [121]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [136]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [151]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [166]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [181]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [196]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [211]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [226]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [241]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [256]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [271]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [286]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [301]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [316]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [331]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [346]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [361]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [376]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [391]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [406]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [421]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [436]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [451]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [466]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE
+                                                            [481]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [496]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [511]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [526]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [541]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [556]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [571]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [586]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [601]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [616] FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [631]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE
+                                                            [646]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [661]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [676]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [691]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [706]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [721]  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE
+                                                            [736]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [751]  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [766]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [781]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [796]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [811]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [826]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE
+                                                            [841] FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [856]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [871]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [886]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [901]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [916]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [931]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [946]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [961]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [976]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [991]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+                                                            [ reached getOption("max.print") -- omitted 335776 entries ]
+                                                            > sum(complete.cases(nycf1))
+                                                            [1] 327346
+                                                            > sum(!complete.cases(nycf1))
+                                                            [1] 9430
+                                                            > sapply(nycf1, function(col){})
+                                                            $day
+                                                            NULL
+                                                            
+                                                            $dep_time
+                                                            NULL
+                                                            
+                                                            $sched_dep_time
+                                                            NULL
+                                                            
+                                                            $dep_delay
+                                                            NULL
+                                                            
+                                                            $arr_time
+                                                            NULL
+                                                            
+                                                            $sched_arr_time
+                                                            NULL
+                                                            
+                                                            $arr_delay
+                                                            NULL
+                                                            
+                                                            > 
+                                                              > sapply(nycf1, function(col)sum(is.na(col))
+                                                                       + )
+                                                            day       dep_time sched_dep_time      dep_delay       arr_time sched_arr_time 
+                                                            0           8255              0           8255           8713              0 
+                                                            arr_delay 
+                                                            9430 
+                                                            > sapply(nycf1, function(col))
+                                                            Error: unexpected ')' in "sapply(nycf1, function(col))"
+                                                            > sapply(nycf1, function(col)sum(is.na(col))
+                                                                     + sapply(flights, function(col)sum(is.na(col))
+                                                                              Error: unexpected symbol in:
+                                                                                "sapply(nycf1, function(col)sum(is.na(col))
+sapply"
+                                                                              > sapply(flights, function(col)sum(is.na(col))
+                                                                                       + 
+                                                                                         + ;
+                                                                                       Error: unexpected ';' in:
+                                                                                         "
+;"
+                                                                                       > sapply(nycf1, function(col)sum(is.na(col))
+                                                                                                + )
+                                                                                       day       dep_time sched_dep_time      dep_delay       arr_time sched_arr_time 
+                                                                                       0           8255              0           8255           8713              0 
+                                                                                       arr_delay 
+                                                                                       9430 
+                                                                                       > sapply(flights, function(col)sum(is.na(col)))
+                                                                                       year          month            day       dep_time sched_dep_time      dep_delay 
+                                                                                       0              0              0           8255              0           8255 
+                                                                                       arr_time sched_arr_time      arr_delay        carrier         flight        tailnum 
+                                                                                       8713              0           9430              0              0           2512 
+                                                                                       origin           dest       air_time       distance           hour         minute 
+                                                                                       0              0           9430              0              0              0 
+                                                                                       time_hour 
+                                                                                       0 
+                                                                                       > flights[sample(1:nrow(flights),10),]
+                                                                                       # A tibble: 10 x 19
+                                                                                       year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time arr_delay carrier
+                                                                                       <int> <int> <int>    <int>          <int>     <dbl>    <int>          <int>     <dbl> <chr>  
+                                                                                         1  2013     9    30     1727           1730        -3     1857           1916       -19 B6     
+                                                                                       2  2013     9    12      630            611        19      743            722        21 EV     
+                                                                                       3  2013     2     5     2233           2241        -8     2348              2       -14 B6     
+                                                                                       4  2013     9    25      813            822        -9      956           1014       -18 EV     
+                                                                                       5  2013     3    15     1854           1825        29     2058           2055         3 WN     
+                                                                                       6  2013     3    29     1942           1920        22     2108           2100         8 AA     
+                                                                                       7  2013     4    24     1105           1102         3     1340           1339         1 UA     
+                                                                                       8  2013     5    28     1255           1300        -5     1423           1435       -12 MQ     
+                                                                                       9  2013     3    29     1330           1325         5     1702           1709        -7 B6     
+                                                                                       10  2013     4    14      705            710        -5      959           1016       -17 UA     
+                                                                                       # ... with 9 more variables: flight <int>, tailnum <chr>, origin <chr>, dest <chr>, air_time <dbl>,
+                                                                                       #   distance <dbl>, hour <dbl>, minute <dbl>, time_hour <dttm>
+                                                                                       > sample(1:nrow(flights),10)
+                                                                                       [1] 137661  68622 241568 266378 326781 299917 227350 328922 283758  12000

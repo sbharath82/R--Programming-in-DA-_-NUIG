@@ -1,0 +1,355 @@
+127          128          129          130          131          132          133 
+0.387758329  0.172524254 -0.018521151 -0.282499329  0.337758329 -0.236103694  0.438850901 
+134          135          136          137          138          139          140 
+-0.523871381  0.228130381  0.055524254 -0.100009359  0.303012463 -0.101265255 -0.367591902 
+141          142          143          144          145          146          147 
+-0.018847798 -0.430660891  0.205524254  0.867663994  0.459291942 -0.605032943  0.456780150 
+148          149          150          151          152          153          154 
+0.185246537 -0.286267017 -0.334265255  1.083663994  0.050663994 -0.641800630  0.348152202 
+155          156          157          158          159          160          161 
+0.071431682  0.580059630  0.248152202 -1.076383173 -0.334265255 -0.889871381  0.670758329 
+162          163          164          165          166          167          168 
+-0.479987537 -0.512404995 -0.191963954  0.382571422  0.709291942 -0.523544735  0.218756567 
+169          170          171          172          173          174          175 
+-0.125637307 -0.542383173  0.085246537 -0.353777047  0.633663994  0.064315526 -0.084847798 
+176          177          178          179          180          181          182 
+0.081152202  0.853175786  0.509618589 -0.554359589  0.444547838 -0.402521151  0.633663994 
+183          184          185          186          187          188          189 
+-0.153103694 -0.636103694  0.049990641  0.408036046 -0.395731642  0.228130381  0.013896306 
+190          191          192          193          194          195          196 
+-0.102521151  0.548152202 -0.603777047  0.926291942 -0.378731642  0.016663994 -0.018847798 
+197          198          199          200          201          202          203 
+-1.205615485  0.416663994  0.266990641  0.642036046 -0.563660891  0.022524254 -0.875127277 
+204          205          206          207          208          209          210 
+-0.267265255  0.575036046  0.178130381  0.417663994 -0.628731642  0.101246537  0.096896306 
+211          212          213          214          215          216          217 
+-1.112568318  0.523780150  0.035246537  0.034919890  0.450827317  0.359291942  0.265734745 
+218          219          220          221          222          223          224 
+-0.435011121 -0.285521151  0.276291942 -0.040381411 -0.060475746 -0.459893203  0.684919890 
+225          226          227          228          229          230          231 
+-0.024963954  0.016408098  0.058036046  0.242036046  0.497059630  0.449408098  0.663059630 
+232          233          234          235          236          237          238 
+0.207106797 -0.446987537  0.309618589 -0.482499329 -0.326893203 -0.359893203  0.333663994 
+239          240          241          242          243          244          245 
+-0.150591902 -0.633172683  0.351919890  0.669502433  0.303012463  0.009455265  0.028640411 
+246          247          248          249          250          251          252 
+-0.494475746 -0.353777047  0.039524254 -1.060056526  0.627547838 -0.009893203  0.046896306 
+253          254          255          256          257          258          259 
+-0.079824214  0.853175786 -0.631243433 -0.359219850  0.421431682  0.046896306 -0.361149099 
+260          261          262          263          264          265          266 
+0.182408098  0.742036046  0.054268358 -0.662404995 -0.153103694  0.605014224 -0.413660891 
+267          268          269          270          271          272 
+0.951919890 -0.134847798  0.545130381 -0.515499329  0.212130381  0.744547838 
+> res1[[4]]
+Estimate  Std. Error   t value      Pr(>|t|)
+(Intercept) -1.87401599 0.160143302 -11.70212  7.359171e-26
+waiting      0.07562795 0.002218541  34.08904 8.129959e-100
+> res1[[1]]
+lm(formula = eruptions ~ waiting, data = faithful)
+> str(summary(mod))
+List of 11
+$ call         : language lm(formula = eruptions ~ waiting, data = faithful)
+$ terms        :Classes 'terms', 'formula'  language eruptions ~ waiting
+.. ..- attr(*, "variables")= language list(eruptions, waiting)
+.. ..- attr(*, "factors")= int [1:2, 1] 0 1
+.. .. ..- attr(*, "dimnames")=List of 2
+.. .. .. ..$ : chr [1:2] "eruptions" "waiting"
+.. .. .. ..$ : chr "waiting"
+.. ..- attr(*, "term.labels")= chr "waiting"
+.. ..- attr(*, "order")= int 1
+.. ..- attr(*, "intercept")= int 1
+.. ..- attr(*, "response")= int 1
+.. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..- attr(*, "predvars")= language list(eruptions, waiting)
+.. ..- attr(*, "dataClasses")= Named chr [1:2] "numeric" "numeric"
+.. .. ..- attr(*, "names")= chr [1:2] "eruptions" "waiting"
+$ residuals    : Named num [1:272] -0.5006 -0.4099 -0.3895 -0.5319 -0.0214 ...
+..- attr(*, "names")= chr [1:272] "1" "2" "3" "4" ...
+$ coefficients : num [1:2, 1:4] -1.87402 0.07563 0.16014 0.00222 -11.70212 ...
+..- attr(*, "dimnames")=List of 2
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+.. ..$ : chr [1:4] "Estimate" "Std. Error" "t value" "Pr(>|t|)"
+$ aliased      : Named logi [1:2] FALSE FALSE
+..- attr(*, "names")= chr [1:2] "(Intercept)" "waiting"
+$ sigma        : num 0.497
+$ df           : int [1:3] 2 270 2
+$ r.squared    : num 0.811
+$ adj.r.squared: num 0.811
+$ fstatistic   : Named num [1:3] 1162 1 270
+..- attr(*, "names")= chr [1:3] "value" "numdf" "dendf"
+$ cov.unscaled : num [1:2, 1:2] 0.10403 -0.00142 -0.00142 0.00002
+..- attr(*, "dimnames")=List of 2
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+- attr(*, "class")= chr "summary.lm"
+> str(summary(mod))[4]
+List of 11
+$ call         : language lm(formula = eruptions ~ waiting, data = faithful)
+$ terms        :Classes 'terms', 'formula'  language eruptions ~ waiting
+.. ..- attr(*, "variables")= language list(eruptions, waiting)
+.. ..- attr(*, "factors")= int [1:2, 1] 0 1
+.. .. ..- attr(*, "dimnames")=List of 2
+.. .. .. ..$ : chr [1:2] "eruptions" "waiting"
+.. .. .. ..$ : chr "waiting"
+.. ..- attr(*, "term.labels")= chr "waiting"
+.. ..- attr(*, "order")= int 1
+.. ..- attr(*, "intercept")= int 1
+.. ..- attr(*, "response")= int 1
+.. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..- attr(*, "predvars")= language list(eruptions, waiting)
+.. ..- attr(*, "dataClasses")= Named chr [1:2] "numeric" "numeric"
+.. .. ..- attr(*, "names")= chr [1:2] "eruptions" "waiting"
+$ residuals    : Named num [1:272] -0.5006 -0.4099 -0.3895 -0.5319 -0.0214 ...
+..- attr(*, "names")= chr [1:272] "1" "2" "3" "4" ...
+$ coefficients : num [1:2, 1:4] -1.87402 0.07563 0.16014 0.00222 -11.70212 ...
+..- attr(*, "dimnames")=List of 2
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+.. ..$ : chr [1:4] "Estimate" "Std. Error" "t value" "Pr(>|t|)"
+$ aliased      : Named logi [1:2] FALSE FALSE
+..- attr(*, "names")= chr [1:2] "(Intercept)" "waiting"
+$ sigma        : num 0.497
+$ df           : int [1:3] 2 270 2
+$ r.squared    : num 0.811
+$ adj.r.squared: num 0.811
+$ fstatistic   : Named num [1:3] 1162 1 270
+..- attr(*, "names")= chr [1:3] "value" "numdf" "dendf"
+$ cov.unscaled : num [1:2, 1:2] 0.10403 -0.00142 -0.00142 0.00002
+..- attr(*, "dimnames")=List of 2
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+- attr(*, "class")= chr "summary.lm"
+NULL
+> str(summary(mod))[[4]]
+List of 11
+$ call         : language lm(formula = eruptions ~ waiting, data = faithful)
+$ terms        :Classes 'terms', 'formula'  language eruptions ~ waiting
+.. ..- attr(*, "variables")= language list(eruptions, waiting)
+.. ..- attr(*, "factors")= int [1:2, 1] 0 1
+.. .. ..- attr(*, "dimnames")=List of 2
+.. .. .. ..$ : chr [1:2] "eruptions" "waiting"
+.. .. .. ..$ : chr "waiting"
+.. ..- attr(*, "term.labels")= chr "waiting"
+.. ..- attr(*, "order")= int 1
+.. ..- attr(*, "intercept")= int 1
+.. ..- attr(*, "response")= int 1
+.. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..- attr(*, "predvars")= language list(eruptions, waiting)
+.. ..- attr(*, "dataClasses")= Named chr [1:2] "numeric" "numeric"
+.. .. ..- attr(*, "names")= chr [1:2] "eruptions" "waiting"
+$ residuals    : Named num [1:272] -0.5006 -0.4099 -0.3895 -0.5319 -0.0214 ...
+..- attr(*, "names")= chr [1:272] "1" "2" "3" "4" ...
+$ coefficients : num [1:2, 1:4] -1.87402 0.07563 0.16014 0.00222 -11.70212 ...
+..- attr(*, "dimnames")=List of 2
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+.. ..$ : chr [1:4] "Estimate" "Std. Error" "t value" "Pr(>|t|)"
+$ aliased      : Named logi [1:2] FALSE FALSE
+..- attr(*, "names")= chr [1:2] "(Intercept)" "waiting"
+$ sigma        : num 0.497
+$ df           : int [1:3] 2 270 2
+$ r.squared    : num 0.811
+$ adj.r.squared: num 0.811
+$ fstatistic   : Named num [1:3] 1162 1 270
+..- attr(*, "names")= chr [1:3] "value" "numdf" "dendf"
+$ cov.unscaled : num [1:2, 1:2] 0.10403 -0.00142 -0.00142 0.00002
+..- attr(*, "dimnames")=List of 2
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+- attr(*, "class")= chr "summary.lm"
+NULL
+> res1[[4]]
+Estimate  Std. Error   t value      Pr(>|t|)
+(Intercept) -1.87401599 0.160143302 -11.70212  7.359171e-26
+waiting      0.07562795 0.002218541  34.08904 8.129959e-100
+> res1[[4]][,1:2]
+Estimate  Std. Error
+(Intercept) -1.87401599 0.160143302
+waiting      0.07562795 0.002218541
+> res1[[4]][1:2,]
+Estimate  Std. Error   t value      Pr(>|t|)
+(Intercept) -1.87401599 0.160143302 -11.70212  7.359171e-26
+waiting      0.07562795 0.002218541  34.08904 8.129959e-100
+> res1[[4]][1:2,0]
+
+(Intercept)
+waiting    
+> res1[[4]][1:2,0:1]
+(Intercept)     waiting 
+-1.87401599  0.07562795 
+> str(summary(mod))
+List of 11
+$ call         : language lm(formula = eruptions ~ waiting, data = faithful)
+$ terms        :Classes 'terms', 'formula'  language eruptions ~ waiting
+.. ..- attr(*, "variables")= language list(eruptions, waiting)
+.. ..- attr(*, "factors")= int [1:2, 1] 0 1
+.. .. ..- attr(*, "dimnames")=List of 2
+.. .. .. ..$ : chr [1:2] "eruptions" "waiting"
+.. .. .. ..$ : chr "waiting"
+.. ..- attr(*, "term.labels")= chr "waiting"
+.. ..- attr(*, "order")= int 1
+.. ..- attr(*, "intercept")= int 1
+.. ..- attr(*, "response")= int 1
+.. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..- attr(*, "predvars")= language list(eruptions, waiting)
+.. ..- attr(*, "dataClasses")= Named chr [1:2] "numeric" "numeric"
+.. .. ..- attr(*, "names")= chr [1:2] "eruptions" "waiting"
+$ residuals    : Named num [1:272] -0.5006 -0.4099 -0.3895 -0.5319 -0.0214 ...
+..- attr(*, "names")= chr [1:272] "1" "2" "3" "4" ...
+$ coefficients : num [1:2, 1:4] -1.87402 0.07563 0.16014 0.00222 -11.70212 ...
+..- attr(*, "dimnames")=List of 2
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+.. ..$ : chr [1:4] "Estimate" "Std. Error" "t value" "Pr(>|t|)"
+$ aliased      : Named logi [1:2] FALSE FALSE
+..- attr(*, "names")= chr [1:2] "(Intercept)" "waiting"
+$ sigma        : num 0.497
+$ df           : int [1:3] 2 270 2
+$ r.squared    : num 0.811
+$ adj.r.squared: num 0.811
+$ fstatistic   : Named num [1:3] 1162 1 270
+..- attr(*, "names")= chr [1:3] "value" "numdf" "dendf"
+$ cov.unscaled : num [1:2, 1:2] 0.10403 -0.00142 -0.00142 0.00002
+..- attr(*, "dimnames")=List of 2
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+.. ..$ : chr [1:2] "(Intercept)" "waiting"
+- attr(*, "class")= chr "summary.lm"
+> 
+  > colnum<-length(names(m1[[12]]))
+Error: object 'm1' not found
+> colnum<-length(names(mod[[12]]))
+> colnum
+[1] 2
+> rownum<-length(names(mod[[12]]))
+> rownum
+[1] 2
+> rownum<-length(row.names(mod[[12]]))
+> rownum
+[1] 272
+> rownum<-length(col.names(mod[[12]]))
+Error in col.names(mod[[12]]) : could not find function "col.names"
+> rownum<-length(column.names(mod[[12]]))
+Error in column.names(mod[[12]]) : could not find function "column.names"
+>  mod_summary<-function(m1){
+  +     res1<-summary(m1)
+  +     colnum<-length(names(m1[[12]]))
+  +     rownum<-length(row.names(m1[[12]]))
+  +     c1<-c(Rows=rownum,Cols<-colnum)
+  +     res<-list(call=res1[[1]],coeff=res1[[4]][1:2,0:1],DataSize=c1)
+  +     
+    +   }
+>   
+  >   s <- mod_summary(mod)
+>   s
+$call
+lm(formula = eruptions ~ waiting, data = faithful)
+
+$coeff
+(Intercept)     waiting 
+-1.87401599  0.07562795 
+
+$DataSize
+Rows      
+272    2 
+
+> mod_summary<-function(m1){
+  +     res1<-summary(m1)
+  +     colnum<-length(names(m1[[12]]))
+  +     rownum<-length(row.names(m1[[12]]))
+  +     c1<-c(Rows=rownum,Cols=colnum)
+  +     res<-list(call=res1[[1]],coeff=res1[[4]][1:2,0:1],DataSize=c1)
+  +     
+    +   }
+>   
+  >   s <- mod_summary(mod)
+>   s
+$call
+lm(formula = eruptions ~ waiting, data = faithful)
+
+$coeff
+(Intercept)     waiting 
+-1.87401599  0.07562795 
+
+$DataSize
+Rows Cols 
+272    2 
+
+> rownum<-length(col.names(mod[[12]]))
+Error in col.names(mod[[12]]) : could not find function "col.names"
+> 
+  > 
+  > 
+  > c <- get_coefficient(mod,"waiting")
+> c
+waiting 
+0.07562795 
+> d <- get_data(mod,"waiting")
+> d[1:20]
+[1] 79 54 74 62 85 55 88 85 51 85 54 84 78 47 83 52 62 84 52 79
+> d <- get_data(mod,"waiting")
+> d[1:200]
+[1] 79 54 74 62 85 55 88 85 51 85 54 84 78 47 83 52 62 84 52 79 51 47 78 69 74 83 55 76 78 79 73
+[32] 77 66 80 74 52 48 80 59 90 80 58 84 58 73 83 64 53 82 59 75 90 54 80 54 83 71 64 77 81 59 84
+[63] 48 82 60 92 78 78 65 73 82 56 79 71 62 76 60 78 76 83 75 82 70 65 73 88 76 80 48 86 60 90 50
+[94] 78 63 72 84 75 51 82 62 88 49 83 81 47 84 52 86 81 75 59 89 79 59 81 50 85 59 87 53 69 77 56
+[125] 88 81 45 82 55 90 45 83 56 89 46 82 51 86 53 79 81 60 82 77 76 59 80 49 96 53 77 77 65 81 71
+[156] 70 81 93 53 89 45 86 58 78 66 76 63 88 52 93 49 57 77 68 81 81 73 50 85 74 55 77 83 83 51 78
+[187] 84 46 83 55 81 57 76 84 77 81 87 77 51 78
+> d <- get_data(mod,"waiting")
+> d[1:20]
+[1] 79 54 74 62 85 55 88 85 51 85 54 84 78 47 83 52 62 84 52 79
+> source('~/R/Iyer19230456-Assignment2.R', echo=TRUE)
+
+> ##Student Id -  19230456  
+  > ##Assignment 2
+  > 
+  > ##write three functions to extract elements of the linear model solution (mod).
+  > 
+  >   mod<-lm( eru .... [TRUNCATED] 
+               
+               >   mod
+               
+               Call:
+                 lm(formula = eruptions ~ waiting, data = faithful)
+               
+               Coefficients:
+                 (Intercept)      waiting  
+               -1.87402      0.07563  
+               
+               
+               >   get_data<-function (m1,v1){
+                 +     len<-length(unique(row.names(m1$model)))
+                 +     dat<-vector(mode="numeric",length=len)
+                 +     colnum<-length(names .... [TRUNCATED] 
+                                      
+                                      >   d <- get_data(mod,"waiting")
+                                      
+                                      >   d[1:20]
+                                      [1] 79 54 74 62 85 55 88 85 51 85 54 84 78 47 83 52 62 84 52 79
+                                      
+                                      >   get_coefficient<-function(m1,v1){
+                                        +     
+                                          +     colnum<-length(names(mod[[1]]))
+                                          +     for (n1 in 1:colnum) {
+                                            +       if(v1==names(mod[[1]][n1])){
+                                              + .... [TRUNCATED] 
+                                              
+                                              >   c <- get_coefficient(mod,"waiting")
+                                              
+                                              >   c
+                                              waiting 
+                                              0.07562795 
+                                              
+                                              >   mod_summary<-function(m1){
+                                                +     res1<-summary(m1)
+                                                +     colnum<-length(names(m1[[12]]))
+                                                +     rownum<-length(row.names(m1[[12]]))
+                                                +     c1<-c(Row .... [TRUNCATED] 
+                                                            
+                                                            >   s <- mod_summary(mod)
+                                                            
+                                                            >   s
+                                                            $call
+                                                            lm(formula = eruptions ~ waiting, data = faithful)
+                                                            
+                                                            $coeff
+                                                            (Intercept)     waiting 
+                                                            -1.87401599  0.07562795 
+                                                            

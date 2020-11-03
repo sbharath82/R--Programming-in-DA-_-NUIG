@@ -1,0 +1,182 @@
+>     min(r)
+[1] 1
+> r[r>mean(r)]
+[1]  49  64  81 100
+> mean(r)
+[1] 38.5
+> sr<-sqrt(r)
+> sr
+ [1]  1  2  3  4  5  6  7  8  9 10
+> ans<-ifelse(sr %% 2 == 0,EVEN, ODD)
+Error in ifelse(sr%%2 == 0, EVEN, ODD) : object 'EVEN' not found
+> ans<-ifelse(sr %% 2 == 0,"EVEN", "ODD")
+> ans
+ [1] "ODD"  "EVEN" "ODD"  "EVEN" "ODD"  "EVEN" "ODD"  "EVEN" "ODD"  "EVEN"
+> x<-1:6
+> x[5]<-NA
+> x
+[1]  1  2  3  4 NA  6
+> sum(x)
+[1] NA
+> sum(x,na.rm=FALSE)
+[1] NA
+> sum(x,na.rm=TRUE)
+[1] 16
+> sample(x,3,replace=FALSE)
+[1] 6 3 1
+> sample(x,3,replace=TRUE)
+[1] 6 3 6
+> is.na(x)
+[1] FALSE FALSE FALSE FALSE  TRUE FALSE
+> which(is.na(x))
+[1] 5
+> x[!is.na(x)]
+[1] 1 2 3 4 6
+> x[is.na(x)]
+[1] NA
+> v<-1:100
+> ?Random
+> letters
+ [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
+> runif(10,1,26)
+ [1] 20.101685 19.463138  8.815850  8.171118  8.981281 16.960169  6.628812 16.807051  4.459472 11.997167
+> runif(letters,1,26)
+ [1] 12.869729  8.912074  8.076091 16.077166  7.652924  4.046694 22.506003 21.068458 19.010975 14.017171 11.778287
+[12] 22.052839 15.635212 23.027693 24.008905  1.924389  9.995016 18.540461  5.963719  9.904937  9.101697 17.412964
+[23] 15.637213 21.665353  7.245840 24.192176
+> ?runif(letters,1,26)
+> ?sample
+> sample(letters,10)
+ [1] "r" "u" "o" "g" "b" "q" "m" "l" "w" "z"
+> set.seed(100)
+> sample(letters,10)
+ [1] "j" "w" "f" "p" "s" "n" "l" "x" "d" "v"
+> i<-runif(10,1,26)
+> i
+ [1]  6.115304  9.938121  9.986878 18.257263 14.395279 18.770096 14.458717 19.724306 11.502536  5.285505
+> round(runif(10,1,26))
+ [1] 20 23 15  8 13 24 10 25 18 23
+> j<-round(runif(10,1,26))
+> letters[j]
+ [1] "f" "q" "z" "d" "i" "w" "t" "v" "p" "m"
+> set.seed(100)
+> j<-round(runif(10,1,26))
+> letters[j]
+ [1] "i" "g" "o" "b" "m" "m" "u" "j" "o" "e"
+> j<-round(runif(10,1,26))
+> letters[j]
+ [1] "q" "w" "h" "k" "t" "r" "f" "j" "j" "r"
+> z<-1:100
+> k<-runif(10,1,100)
+> k
+ [1] 54.04530 71.36958 54.29652 75.14825 42.59004 17.97060 77.25986 88.31341 55.36057 28.49465
+> k<-round(runif(10,1,100)
++ k
+Error: unexpected symbol in:
+"k<-round(runif(10,1,100)
+k"
+> k
+ [1] 54.04530 71.36958 54.29652 75.14825 42.59004 17.97060 77.25986 88.31341 55.36057 28.49465
+> k<-round(runif(10,1,100))
+> k
+ [1] 49 93 36 95 70 89 19 63 99 14
+> z[k]<-NA
+> z
+  [1]   1   2   3   4   5   6   7   8   9  10  11  12  13  NA  15  16  17  18  NA  20  21  22  23  24  25  26  27  28  29
+ [30]  30  31  32  33  34  35  NA  37  38  39  40  41  42  43  44  45  46  47  48  NA  50  51  52  53  54  55  56  57  58
+ [59]  59  60  61  62  NA  64  65  66  67  68  69  NA  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87
+ [88]  88  NA  90  91  92  NA  94  NA  96  97  98  NA 100
+> is.na(z)
+  [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE  TRUE
+ [20] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE
+ [39] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [58] FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE
+ [77] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE  TRUE FALSE  TRUE
+ [96] FALSE FALSE FALSE  TRUE FALSE
+> which(is.na(z))
+ [1] 14 19 36 49 63 70 89 93 95 99
+ 
+>forx<-1:4
+> fory<-vector(mode="numeric",length=length(forx))
+> for (i in seq_along(x)) {
++     y[i]<-x[i]
++ }
+Error: object 'y' not found
+> for (i in seq_along(x)) {
++     y[i]<-x[i]
++ }
+Error: object 'y' not found
+> for (i in seq_along(x)) {
++     fory[i]<-forx[i]
++ }
+> fory
+[1]  1  2  3  4 NA NA
+> forx
+[1] 1 2 3 4
+> length(forx)
+[1] 4
+> length(fory)
+[1] 6
+> fory<-vector(mode="numeric",length=length(forx))
+> length(fory)
+[1] 4
+> for (i in seq_along(x)) {
++     fory[i]<-forx[i]
++ }
+> fory
+[1]  1  2  3  4 NA NA
+> length(forx)
+[1] 4
+> length(fory)
+[1] 6
+> fory<-vector(mode="numeric",length=length(forx))
+> for (i in seq_along(forx)) {
++     fory[i]<-forx[i]
++ }
+> length(fory)
+[1] 4
+> fory
+[1] 1 2 3 4
+> length(forx)
+[1] 4
+> forx
+[1] 1 2 3 4
+>     
+> x<=8
+[1] TRUE TRUE TRUE TRUE   NA TRUE
+> x<-8
+> x
+[1] 8
+> if(x %% 2 == 0){}
+NULL
+> if(x %% 2 == 0){}
+NULL
+> if(x %% 2 == 0){ "Even number"}
+[1] "Even number"
+> if(x %% 2 == 0){ y<-"Even number"}
+> y
+[1] "Even number"
+> x<-8
+> y<-"Unknown"
+> if(x %% 2 == 0){}
+NULL
+> if(x %% 2 == 0){
++ y<-"Even Number"}
+> else{y<-"Odd Number"}
+Error: unexpected 'else' in "else"
+> 
+> 
+> if(x%%2==0){
++ y<-"Even"
++ }else{
++ y<-"Odd"}
+> y
+[1] "Even"
+> sprintf("%s and %f are numeric and integer numbers respectively",2.01,8L)
+[1] "2.01 and 8.000000 are numeric and integer numbers respectively"
+> sprintf("%s and %f are numeric and integer numbers respectively",2.01,).28L)
+Error: unexpected numeric constant in "sprintf("%s and %f are numeric and integer numbers respectively",2.01,).28L"
+> sprintf("%s and %0.2f are numeric and integer numbers respectively",2.01,8L)
+[1] "2.01 and 8.00 are numeric and integer numbers respectively"
+> sprintf("%s and %0.0f are numeric and integer numbers respectively",2.01,8L)
+[1] "2.01 and 8 are numeric and integer numbers respectively"

@@ -1,0 +1,1 @@
+ y<-function(arg1){ if(arg1%%2==0){return arg1}}

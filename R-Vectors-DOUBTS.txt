@@ -1,0 +1,3 @@
+how to get the only positive values from a vector list?
+how to range the max number in a given list or vector to an upper bound?
+How to limit the decimal values to a certain digits in a vector list?

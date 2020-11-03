@@ -1,0 +1,92 @@
+for (i in dice1) {
+  for (j in dice2) {
+    total[i][j]<-dice1[i][j]+dice2[i][j]
+  }
+}
+
+str(dice1)
+str(dice2)
+str(total)
+table(total)
+
+> set.seed(1000)
+> dice1<-sample(1:6,1000,replace=TRUE)
+> table(dice1)
+dice1
+1   2   3   4   5   6 
+159 162 176 141 179 183 
+> dice2<-sample(1:6,1000,replace=TRUE)
+> table(dice2)
+dice2
+1   2   3   4   5   6 
+169 157 157 169 175 173 
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.3,.6,.3))
+Error in sample.int(length(x), size, replace, prob) : 
+  incorrect number of probabilities
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.1,.1,.1,.1,.2,.2,.2,.1,.1,.1))
+Error in sample.int(length(x), size, replace, prob) : 
+  incorrect number of probabilities
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.1,.1,.1,.1,.2,.2,.2,.1,.1,.1,.1))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+69  63  68  75 170 138 139  73  79  76  50 
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.03,.06,.1,.08,.15,.16,.14,.1,.08,.08,.04))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+30  61  96  85 137 141 149  94  84  79  44 
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.03,.06,.09,.075,.15,.16,.14,.1,.08,.08,.04))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+34  49  93 107 141 152 134 111  80  69  30 
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.03,.06,.09,.075,.15,.16,.14,.1,.08,.08,.04))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+22  66  87  77 149 166 136  84  76  91  46 
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+22  66  87  77 149 166 136  84  76  91  46 
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+22  66  87  77 149 166 136  84  76  91  46 
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.03,.06,.09,.075,.15,.16,.14,.1,.08,.08,.04))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+27  67  83  83 168 159 138 106  68  68  33 
+> set.seed(1000)
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.03,.06,.09,.075,.15,.16,.14,.1,.08,.08,.04))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+30  47  95  76 151 157 132 104  89  78  41 
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+30  47  95  76 151 157 132 104  89  78  41 
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+30  47  95  76 151 157 132 104  89  78  41 
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.03,.06,.09,.075,.15,.16,.14,.1,.08,.08,.04))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+23  52  85  88 146 177 142  87  81  81  38 
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.028,.063,.090,.075,.149,.162,.141,.098,.079,.077,.038))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+30  58  88  54 139 165 153 110  75  84  44 
+> set.seed(1000)
+> total<-sample(2:12,1000,replace=TRUE,prob = c(.028,.063,.090,.075,.149,.162,.141,.098,.079,.077,.038))
+> table(total)
+total
+2   3   4   5   6   7   8   9  10  11  12 
+27  50  96  76 150 161 134 101  76  88  41 
+> ?sample
